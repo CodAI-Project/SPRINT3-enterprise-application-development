@@ -20,7 +20,7 @@
 # Aquitetura do projeto:
 
 <div id="arquitetura-projeto" style="padding: 10px; border-radius: 10px;">
-    <img src="" />
+    <img src="https://lh3.google.com/u/0/d/1O3dQrAlM3GEHenx9OJ9fz2yd1D-feg_K=w1366-h651-iv1" />
 </div>
 
 # Figma: 
