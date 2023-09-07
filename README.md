@@ -3,13 +3,13 @@
 ### Projeto que contém a API de um serviço de doações. 
 
 # Sumário
-- [Objetivo do projeto](#objetivodoprojeto)
+- [Objetivo do projeto](#objetivo-do-projeto)
 
 - [Arquitetura](#arquitetura-projeto)
 
 - [Figma](#figma)
 
-- [Protótipo](#prototipo)
+- [Protótipo](#protótipo)
   
 - [Funcionalidades](#funcionalidades)
 
