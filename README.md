@@ -15,7 +15,7 @@
 
 
 # Objetivo do projeto:
-### A CodAI, é uma solução tecnológica .O projeto visa solucionar o problema d. Dessa forma, o Food Share promove a doação e redistribuição de alimentos para pessoas em situação de vulnerabilidade.
+### A CodAI, é uma solução tecnológica low code/no code de geração de templates automatizados. O projeto visa solucionar o problema de  idealização do projeto( sendo o quick start), atraso de entregas e identificação ou desenvolvimento de lógica código. Dessa forma, a CodAI promove a agilidade e flexibilidade operacional, aumento da produtividade e redução de custos.
 
 # Aquitetura do projeto:
 
