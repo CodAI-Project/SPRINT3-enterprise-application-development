@@ -29,6 +29,6 @@
 
 # Protótipo: 
 ### Neste link está o Prótotipo do projeto.
-- [clique aqui]((https://codai-hub-development.web.app/))
+- [clique aqui](https://codai-hub-development.web.app/)
 
 # Funcionalidades
