@@ -1,6 +1,6 @@
 # SPRINT3-enterprise-application-development
 
-### Projeto que contém a API de um serviço de doações. 
+### Projeto que contém a API de um serviço de automatização de templates. 
 
 # Sumário
 - [Objetivo do projeto](#objetivo-do-projeto)
