@@ -47,7 +47,4 @@
 - [clique aqui]( https://codai-hub-development.web.app/ )
 
 # Funcionalidades
-### As principais funcionalidades do sistema são criar usuário com seus respectivos chats gerados,
-### cada chat tem uma interação com o ChatGPT que pega o Array das ultimas 6 mensagens enviadas para conseguir
-### trabalhar em cima do contexto e enviar a resposta mais assertiva ao usuário. Assim gerando uma interação 
-### fluída, flexivel, dinâmica e objetiva de criação de um template.
+### As principais funcionalidades do sistema são criar usuário com seus respectivos chats gerados,cada chat tem uma interação com o ChatGPT que pega o Array das ultimas 6 mensagens enviadas para conseguir trabalhar em cima do contexto e enviar a resposta mais assertiva ao usuário. Assim gerando uma interação fluída, flexivel, dinâmica e objetiva de criação de um template.
