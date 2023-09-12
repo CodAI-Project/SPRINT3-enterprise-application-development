@@ -2,10 +2,10 @@
 
 # Integrantes do grupo:
 
-94898 - Luan Santos dos Reis
-94067 - Gustavo de Souza Fonseca
-94282 - Dennys Alvarenga do Nascimento
-94276 - Henrique Cesar de Souza
+- 94898-Luan Santos dos Reis
+- 94067-Gustavo de Souza Fonseca
+- 94282-Dennys Alvarenga do Nascimento
+- 94276-Henrique Cesar de Souza
 
 ### Projeto que contém a API de um serviço de automatização de templates. 
 
@@ -48,6 +48,6 @@
 
 # Funcionalidades
 ### As principais funcionalidades do sistema são criar usuário com seus respectivos chats gerados,
-cada chat tem uma interação com o ChatGPT que pega o Array das ultimas 6 mensagens enviadas para conseguir
-trabalhar em cima do contexto e enviar a resposta mais assertiva ao usuário. Assim gerando uma interação 
-fluída, flexivel, dinâmica e objetiva de criação de um template.
+### cada chat tem uma interação com o ChatGPT que pega o Array das ultimas 6 mensagens enviadas para conseguir
+### trabalhar em cima do contexto e enviar a resposta mais assertiva ao usuário. Assim gerando uma interação 
+### fluída, flexivel, dinâmica e objetiva de criação de um template.
