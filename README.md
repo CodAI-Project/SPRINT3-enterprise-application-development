@@ -50,10 +50,9 @@ Como o projeto usa Firebase, você deve estar logado no firebase na sua maquina 
    ```
    git clone https://github.com/CodAI-Project/SPRINT3-enterprise-application-development.git
     ```
-2. 
-    ```
-    
-    ```
+2. Adicionar sua credencial do firestore.
+3. Apontar no atributo "directory" da FirestoreConnection.cs, onde está localizado o caminho da sua credencial(deixamos um exemplo).
+4. Adicionar no arquivo appsetings.json, um atributo "ChatGPTSecretKey": "sua token do ChatGPT".  
 
 # Protótipo: 
 ### Neste link está o Prótotipo do projeto.
