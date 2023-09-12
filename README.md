@@ -26,7 +26,7 @@
 
 
 # Objetivo do projeto:
-### A CodAI, é uma solução tecnológica low code/no code de geração de templates automatizados. O projeto visa solucionar o problema de  idealização do projeto( sendo o quick start), atraso de entregas e identificação ou desenvolvimento de lógica código. Dessa forma, a CodAI promove a agilidade e flexibilidade operacional, aumento da produtividade e redução de custos.
+O CodAI Backend é a espinha dorsal da plataforma CodAI, responsável por gerenciar, armazenar e fornecer acesso aos dados essenciais para a funcionalidade da aplicação. Este componente é vital para o funcionamento do sistema, possibilitando a criação, leitura, atualização e exclusão de informações relacionadas ao desenvolvimento de código.
 
 # Swagger
  Link do Swagger [aqui](https://app.swaggerhub.com/apis-docs/LUANSSRR/CodAI/1.0.0-oas3).
@@ -39,8 +39,20 @@
 - [clique para visualizar](https://www.figma.com/file/7hc3JzFMJWcso1QT2zNAfJ/CodAI?type=design&node-id=0%3A1&mode=design&t=76rIXyljoFxOdjHN-1)  
 
 # Inicialização:
-### Para inicializar o projeto basta criar 2 arquivos json com os respectivos requisitos:
+## Como Inicializar Localmente
+Para executar o CodAI Back-end localmente, siga estas etapas:
 
+**Observações:** 
+Como o projeto usa Firebase, você deve estar logado no firebase na sua maquina pra conseguir usar o projeto. ele será instanciado na sua maquina com as suas credenciais.
+  
+
+1. Clone o repositório:
+   ```
+   
+    ```
+2. 
+    ```
+    ```
 
 # Protótipo: 
 ### Neste link está o Prótotipo do projeto.
@@ -48,3 +60,13 @@
 
 # Funcionalidades
 ### As principais funcionalidades do sistema são criar usuário com seus respectivos chats gerados,cada chat tem uma interação com o ChatGPT que pega o Array das ultimas 6 mensagens enviadas para conseguir trabalhar em cima do contexto e enviar a resposta mais assertiva ao usuário. Assim gerando uma interação fluída, flexivel, dinâmica e objetiva de criação de um template.
+
+## Principais Recursos do CodAI Backend
+
+O CodAI Backend oferece uma série de recursos essenciais que impulsionam a funcionalidade da plataforma:
+
+1. **API RESTful:** Fornece uma API RESTful que segue as melhores práticas de design de API para interações eficazes entre o frontend e o backend.
+
+2. **Banco de Dados Firebase:** Utiliza o Firestore como banco de dados para armazenar e recuperar dados de forma eficiente e escalável.
+
+3. **CRUD de Chats (Projetos):** Oferece operações CRUD (Create, Read, Update e Delete) para projetos de desenvolvimento, permitindo que os usuários gerenciem seus projetos.
