@@ -1,6 +1,8 @@
-﻿using CodAi.Models;
+﻿using CodAi.Dto;
+using CodAi.Models;
 using Google.Cloud.Firestore;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace CodAi.Controllers
 {
@@ -23,49 +25,41 @@ namespace CodAi.Controllers
             DocumentReference documentReference = _db.Collection("user").Document(id);
             DocumentSnapshot documentSnapshot = await documentReference.GetSnapshotAsync();
 
-
             if (documentSnapshot.Exists)
             {
-                //User user = new User();
-                DocumentReference chatReferences = documentSnapshot.GetValue<DocumentReference>("chats");
-
-                if (chatReferences != null)
-                {
-                    //foreach (var chatRef in chatReferences)
-                    //{
-                    //    // Obtenha o DocumentSnapshot do chat referenciado
-                    //    DocumentSnapshot chatSnapshot = await chatRef.GetSnapshotAsync();
-
-                    //    if (chatSnapshot.Exists)
-                    //    {
-                    //        // O documento de chat referenciado existe, agora você pode converter para o tipo Chat
-                    //        Chat chat = chatSnapshot.ConvertTo<Chat>();
-
-                    //        if (chat != null)
-                    //        {
-                    //            // Agora você pode usar o objeto Chat
-                    //            string chatId = chat.Id;
-                    //            string chatTitle = chat.title;
-
-                    //            // Acesse a lista de histórico, se necessário
-                    //            List<History> history = chat.history;
-                    //            if (history != null)
-                    //            {
-                    //                return Ok(chat);
-                    //            }
-                    //        }
-
-                    //    }
-                    //}
-                }
-                User user = documentSnapshot.ConvertTo<User>();
-
+                User user = new User();
+                Dictionary<string, object> userData = documentSnapshot.ToDictionary();
                 user.Id = documentSnapshot.Id;
 
-                return Ok(user);
+                if (userData != null)
+                {
+
+                    List<ChatDto> listChat = new List<ChatDto>();
+                    ChatController chatController = new ChatController();
+
+                    if (userData.ContainsKey("chats") && userData["chats"] is object chat)
+                    {
+                        Console.Write(chat);
+                        if (chat is Dictionary<string, object> chatData)
+                        {
+                            foreach (KeyValuePair<string, object> c in chatData)
+                            {
+                                DocumentReference docChat = (DocumentReference)c.Value;
+                                ChatDto newChat = new ChatDto();
+                                newChat.Id = docChat.Id;
+
+                                listChat.Add(newChat);
+                            }
+                        }
+                    }
+
+                    user.chats = listChat;
+                    return Ok(user);
+                }
             }
 
             return BadRequest();
+
         }
     }
 }

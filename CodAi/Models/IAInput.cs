@@ -17,13 +17,4 @@
             model = "gpt-3.5-turbo";
         }
     }
-
-    //public class Message 
-    //{ 
-    //    public List<History> ?Historys { get; set; }
-
-    //    public Message(List<History> historys) {
-    //        Historys = historys;
-    //    }
-    //}
 }

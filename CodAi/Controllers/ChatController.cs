@@ -1,5 +1,6 @@
 ﻿using CodAi.Models;
 using Google.Cloud.Firestore;
+using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
@@ -32,6 +33,7 @@ namespace CodAi.Controllers
                 Chat newChat = documentSnapshot.ConvertTo<Chat>();
 
                 newChat.Id = documentSnapshot.Id;
+
                 Dictionary<string, object> chat = documentSnapshot.ToDictionary();
                 foreach (KeyValuePair<string, object> c in chat)
                 {
@@ -68,6 +70,10 @@ namespace CodAi.Controllers
                         }
 
                         newChat.history = listHistory;
+                    }
+
+                    if (c.Key.ToLower() == "lastmodified") {
+                        newChat.lastModified = (long)c.Value;
                     }
 
                 }

@@ -19,7 +19,7 @@ namespace CodAi.Controllers
         }
 
         [HttpPost]
-        public async Task<string> PostResponseIA(Chat chat, [FromServices] IConfiguration configuration)
+        public async Task<IActionResult> PostResponseIA(Chat chat, [FromServices] IConfiguration configuration)
         {
             var token = configuration.GetValue<string>("ChatGPTSecretKey");
 
@@ -28,7 +28,7 @@ namespace CodAi.Controllers
 
             List<History> historys = new List<History>();
 
-            foreach (History hist in chat.history) {
+            foreach (History hist in TratamentIAInterationUser(chat)) {
                 historys.Add(hist);
             }
 
@@ -43,7 +43,30 @@ namespace CodAi.Controllers
 
             var promptResponse = result?.choices.First();
 
-            return promptResponse.message.content.Replace("\n", "").Replace("\t", "");
+            chat.history.Add(promptResponse.message);
+
+            ChatController chatController = new ChatController();
+
+            chatController.UpdateChat(chat);
+
+            return Ok(promptResponse.message);
+        }
+
+
+        public List<History> TratamentIAInterationUser(Chat chat) {
+
+            
+            List<History> listHistory = new List<History>();
+
+            int numberOfItemsToTake = 6;
+
+
+            IEnumerable<History> lastSixHistory = chat.history.Skip(Math.Max(0, chat.history.Count - numberOfItemsToTake)).Take(numberOfItemsToTake);
+
+            listHistory.AddRange(lastSixHistory);
+
+            return listHistory;
+
         }
     }
 }

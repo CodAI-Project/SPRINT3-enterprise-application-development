@@ -5,17 +5,22 @@ namespace CodAi.Models
     [FirestoreData]
     public class Chat
     {
-        [FirestoreProperty]
+        //[FirestoreProperty]
         public string? Id { get; set; }
 
         [FirestoreProperty]
         public List<History>? history { get; set; }
 
-
         [FirestoreProperty]
         public string? title { get; set; }
 
-        //public Chat() { }
+        [FirestoreProperty]
+        public long lastModified { get; set; }
+
+        public Chat()
+        {
+            lastModified = (long)new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds();
+        }
 
     }
 }
