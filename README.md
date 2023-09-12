@@ -1,16 +1,25 @@
 # SPRINT3-enterprise-application-development
 
+# Integrantes do grupo:
+
+94898 - Luan Santos dos Reis
+94067 - Gustavo de Souza Fonseca
+94282 - Dennys Alvarenga do Nascimento
+94276 - Henrique Cesar de Souza
+
 ### Projeto que contém a API de um serviço de automatização de templates. 
 
 # Sumário
 - [Objetivo do projeto](#objetivo-do-projeto)
-  
-- [Swagger](#swagger)
 
+- [Swagger](#swagger)
+  
 - [Arquitetura](#arquitetura)
 
 - [Figma](#figma)
 
+- [Inicialização](#inicialização)
+  
 - [Protótipo](#protótipo)
   
 - [Funcionalidades](#funcionalidades)
@@ -29,9 +38,16 @@
 ### Representação visual do projeto com a parte da UX e interação do usuário.
 - [clique para visualizar](https://www.figma.com/file/7hc3JzFMJWcso1QT2zNAfJ/CodAI?type=design&node-id=0%3A1&mode=design&t=76rIXyljoFxOdjHN-1)  
 
+# Inicialização:
+### Para inicializar o projeto basta criar 2 arquivos json com os respectivos requisitos:
+
+
 # Protótipo: 
 ### Neste link está o Prótotipo do projeto.
 - [clique aqui]( https://codai-hub-development.web.app/ )
 
 # Funcionalidades
-### As principais funcionalidades do sistema são...
+### As principais funcionalidades do sistema são criar usuário com seus respectivos chats gerados,
+cada chat tem uma interação com o ChatGPT que pega o Array das ultimas 6 mensagens enviadas para conseguir
+trabalhar em cima do contexto e enviar a resposta mais assertiva ao usuário. Assim gerando uma interação 
+fluída, flexivel, dinâmica e objetiva de criação de um template.
