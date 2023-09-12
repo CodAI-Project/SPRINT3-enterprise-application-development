@@ -48,10 +48,11 @@ Como o projeto usa Firebase, você deve estar logado no firebase na sua maquina 
 
 1. Clone o repositório:
    ```
-   
+   git clone https://github.com/CodAI-Project/SPRINT3-enterprise-application-development.git
     ```
 2. 
     ```
+    
     ```
 
 # Protótipo: 
