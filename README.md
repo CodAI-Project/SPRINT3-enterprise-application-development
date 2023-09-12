@@ -39,8 +39,8 @@ O CodAI Backend é a espinha dorsal da plataforma CodAI, responsável por gerenc
 - [clique para visualizar](https://www.figma.com/file/7hc3JzFMJWcso1QT2zNAfJ/CodAI?type=design&node-id=0%3A1&mode=design&t=76rIXyljoFxOdjHN-1)  
 
 # Inicialização:
-## Como Inicializar Localmente
-Para executar o CodAI Back-end localmente, siga estas etapas:
+
+Para inicializar localmente, siga estas etapas:
 
 **Observações:** 
 Como o projeto usa Firebase, você deve estar logado no firebase na sua maquina pra conseguir usar o projeto. ele será instanciado na sua maquina com as suas credenciais.
