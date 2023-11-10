@@ -1,4 +1,4 @@
-# SPRINT3-enterprise-application-development
+# SPRINT4-enterprise-application-development
 
 # Integrantes do grupo:
 
