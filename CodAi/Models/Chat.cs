@@ -21,6 +21,5 @@ namespace CodAi.Models
         {
             lastModified = (long)new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds();
         }
-
     }
 }

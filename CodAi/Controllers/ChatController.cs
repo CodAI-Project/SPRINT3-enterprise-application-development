@@ -72,7 +72,8 @@ namespace CodAi.Controllers
                         newChat.history = listHistory;
                     }
 
-                    if (c.Key.ToLower() == "lastmodified") {
+                    if (c.Key.ToLower() == "lastmodified")
+                    {
                         newChat.lastModified = (long)c.Value;
                     }
 
